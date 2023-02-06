@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0fb5230-750b-4f9b-abd6-7c2b4564ee1c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/points_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/points_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/stations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/stations_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/point.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/point.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/station.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/station.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/points/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/points/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/stations/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/stations/edit.html.erb" afterDir="false" />
-    </list>
+    <list default="true" id="a0fb5230-750b-4f9b-abd6-7c2b4564ee1c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -238,6 +230,6 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/electrocars@electrocars.rcov" NAME="electrocars Coverage Results" MODIFIED="1675700819349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="electrocars" />
+    <SUITE FILE_PATH="coverage/electrocars@electrocars.rcov" NAME="electrocars Coverage Results" MODIFIED="1675700908448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="electrocars" />
   </component>
 </project>
