@@ -1,0 +1,8 @@
+<h1><%= "Station##{@station.serial_number}" %></h1>
+
+<%= link_to 'edit', edit_point_station_path %>
+<%= link_to "Destroy", point_station_path(@station.id), data: {
+  turbo_method: :delete
+} %>
+
+<%= link_to 'back', point_path(@point) %>

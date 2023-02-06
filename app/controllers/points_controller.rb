@@ -5,6 +5,7 @@ class PointsController < ApplicationController
 
   def show
     @point = Point.find(params[:id])
+    @stations = @point.station.all
   end
 
   def new
