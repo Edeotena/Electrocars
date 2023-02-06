@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0fb5230-750b-4f9b-abd6-7c2b4564ee1c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/connector.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/connector.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/points_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/points_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/point.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/point.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/station.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/station.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/points/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/points/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +31,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2LMP3QuzBnt8dzbN0zyPLqaI2E8" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -135,7 +140,7 @@
       <option name="presentableId" value="Default" />
       <updated>1675677778075</updated>
       <workItem from="1675677779155" duration="1920000" />
-      <workItem from="1675679904691" duration="1670000" />
+      <workItem from="1675679904691" duration="4012000" />
     </task>
     <servers />
   </component>
@@ -153,7 +158,21 @@
       </map>
     </option>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/controllers/points_controller.rb</url>
+          <line>6</line>
+          <properties myBlockOrdinal="-1">
+            <option name="block-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/electrocars@electrocars.rcov" NAME="electrocars Coverage Results" MODIFIED="1675680138137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="electrocars" />
+    <SUITE FILE_PATH="coverage/electrocars@electrocars.rcov" NAME="electrocars Coverage Results" MODIFIED="1675683970554" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="electrocars" />
   </component>
 </project>

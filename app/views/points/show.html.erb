@@ -1,0 +1,11 @@
+<h1><%= @point.name %></h1>
+
+<p>latitude: <%= @point.latitude %></p>
+<p>longitude: <%= @point.longitude %></p>
+
+<%= link_to 'edit', edit_point_path %>
+<%= link_to "Destroy", point_path(@point), data: {
+  turbo_method: :delete
+} %>
+
+<%= link_to 'back', points_path %>
