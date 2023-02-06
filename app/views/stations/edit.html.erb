@@ -1,6 +1,6 @@
 <h2>Edit a station:</h2>
 
-<%= form_with model: [@point, @point.station.build] do |form| %>
+<%= form_with model: [@point, @point.station.find(params[:point_id])] do |form| %>
   <p>
     <%= form.label :serial_number %><br>
     <%= form.text_field :serial_number %>

@@ -33,10 +33,10 @@ class StationsController < ApplicationController
   end
 
   def update
-    @point = Point.find(params[:id])
-    @station = Station.find(params[:point_id])
+    @point = Point.find(params[:point_id])
+    @station = Station.find(params[:id])
 
-    if @point.save
+    if @station.update(station_params)
       redirect_to point_path @point
     else
       render :edit, status: :unprocessable_entity

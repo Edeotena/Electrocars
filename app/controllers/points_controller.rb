@@ -36,7 +36,7 @@ class PointsController < ApplicationController
   def update
     @point = Point.find(params[:id])
 
-    if @point.save
+    if @point.update(point_params)
       redirect_to points_path
     else
       render :edit, status: :unprocessable_entity
