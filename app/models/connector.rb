@@ -1,6 +1,6 @@
 class Connector < ApplicationRecord
   belongs_to :station
-  has_many :sessions
+  has_many :sessions, dependent: :destroy
 
   valid_types = ['CHAdeMO', 'CCS Combo 2', 'Type 2']
 

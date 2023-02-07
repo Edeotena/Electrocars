@@ -1,0 +1,10 @@
+<%= link_to "back", root_path %>
+<h1>Sessions list:</h1>
+
+<ul>
+  <% @sessions.each do |session| %>
+    <li>
+      Session id: <%= session.id %>, client_id: <%= session.client_id %>, connector_id: <%= session.connector_id %>, status: <%= session.status %>
+    </li>
+  <% end %>
+</ul>

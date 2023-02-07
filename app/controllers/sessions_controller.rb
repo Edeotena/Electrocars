@@ -1,4 +1,7 @@
 class SessionsController < ApplicationController
+  def index
+    @sessions = Session.all
+  end
   def create
     @session = Session.create session_params
     set_back_params
