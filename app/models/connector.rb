@@ -1,5 +1,6 @@
 class Connector < ApplicationRecord
   belongs_to :station
+  has_many :sessions
 
   valid_types = ['CHAdeMO', 'CCS Combo 2', 'Type 2']
 
