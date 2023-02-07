@@ -11,7 +11,7 @@
 <%= link_to 'back', points_path %>
 
 <h2>Stations:</h2>
-<%= @stations.reverse_each do |station| %>
+<% @stations.reverse_each do |station| %>
   <li>
   <%= link_to "Station ##{station.serial_number}", point_station_path(station) %>
   </li>

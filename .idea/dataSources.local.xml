@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="RM-223.8617.48">
+    <data-source name="electrocars: development" uuid="38d88b2d-b86d-4631-9f41-c70af5562e87">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <user-name>edeotena</user-name>
+      <schema-mapping />
+    </data-source>
+    <data-source name="electrocars: production" uuid="2853af39-f82d-4a90-af36-d2f2f9a0edee">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <user-name>electrocars</user-name>
+      <schema-mapping />
+    </data-source>
+    <data-source name="electrocars: test" uuid="b297c891-7d29-4ebf-a23c-64545c4a3eac">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <schema-mapping />
+    </data-source>
+  </component>
+</project>

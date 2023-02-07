@@ -6,3 +6,12 @@
 } %>
 
 <%= link_to 'back', point_path(@point) %>
+
+<h2>Connectors:</h2>
+<% @connectors.reverse_each do |connector| %>
+  <li>
+    <%= link_to "Connector ##{connector.type}", point_station_connector_path(@station) %>
+  </li>
+<% end %>
+<br>
+<%= link_to "New connector", new_point_station_connector_path(station_id: @station) %>

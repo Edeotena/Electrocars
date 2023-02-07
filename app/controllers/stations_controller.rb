@@ -2,6 +2,7 @@ class StationsController < ApplicationController
   def show
     @point = Point.find(params[:id])
     @station = Station.find(params[:point_id])
+    @connectors = @station.connectors.all
   end
 
   def new
