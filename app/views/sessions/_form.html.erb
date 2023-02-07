@@ -1,0 +1,14 @@
+<%= form_with model: @session do |form| %>
+  <p>
+    <%= form.label :client_id %><br>
+    <%= form.text_field :client_id %>
+  </p>
+  <p>
+    <%= form.label :energy %><br>
+    <%= form.text_field :energy %>
+  </p>
+  <%= hidden_field_tag(:connector_id, @connector.id) %>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

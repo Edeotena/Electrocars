@@ -2,6 +2,11 @@ class ConnectorsController < ApplicationController
   before_action :set_point_and_station
   before_action :set_connector, except: [:new, :create]
   def show
+    if @connector.is_free?
+      @session = @connector.sessions.build
+    else
+      @session = @connector.get_active.first
+    end
   end
   def new
     @connector = @station.connectors.new
@@ -46,5 +51,4 @@ class ConnectorsController < ApplicationController
   def set_connector
     @connector = Connector.find(params[:id])
   end
-
 end

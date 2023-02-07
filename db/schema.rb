@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_07_121617) do
+ActiveRecord::Schema[7.0].define(version: 2023_02_07_155618) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -38,6 +38,17 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_07_121617) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "sessions", force: :cascade do |t|
+    t.bigint "client_id", null: false
+    t.bigint "connector_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "status"
+    t.decimal "energy"
+    t.index ["client_id"], name: "index_sessions_on_client_id"
+    t.index ["connector_id"], name: "index_sessions_on_connector_id"
+  end
+
   create_table "stations", force: :cascade do |t|
     t.string "serial_number"
     t.datetime "created_at", null: false
@@ -47,5 +58,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_07_121617) do
   end
 
   add_foreign_key "connectors", "stations"
+  add_foreign_key "sessions", "clients"
+  add_foreign_key "sessions", "connectors"
   add_foreign_key "stations", "points"
 end

@@ -6,4 +6,6 @@ Rails.application.routes.draw do
       resources :connectors
     end
   end
+  resources :sessions, only: [:show, :index, :create]
+  get 'sessions/:id/stop', to: 'sessions#stop'
 end
