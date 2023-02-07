@@ -1,18 +1,6 @@
 <h2>Add a connector:</h2>
 
-<%= form_with model: [@point, @station, @station.connectors.build] do |form| %>
-  <p>
-    <%= form.label :type %><br>
-    <%= form.text_field :type %>
-  </p>
-  <p>
-    <%= form.label :power %><br>
-    <%= form.text_field :power %>
-  </p>
-  <p>
-    <%= form.submit %>
-  </p>
-<% end %>
+<%= render "form", point: @point, station: @station, connector: @connector %>
 
 <br>
-<%= link_to 'back', point_station_path(id: @point) %>
+<%= link_to 'back', point_station_path(@point, @station) %>

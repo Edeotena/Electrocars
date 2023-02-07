@@ -4,7 +4,7 @@
 <p>longitude: <%= @point.longitude %></p>
 
 <%= link_to 'edit', edit_point_path %>
-<%= link_to "Destroy", point_path(@point), data: {
+<%= link_to 'destroy', @point, data: {
   turbo_method: :delete
 } %>
 
@@ -13,7 +13,7 @@
 <h2>Stations:</h2>
 <% @stations.reverse_each do |station| %>
   <li>
-  <%= link_to "Station ##{station.serial_number}", point_station_path(station) %>
+  <%= link_to "Station ##{station.serial_number}", point_station_path(@point, station) %>
   </li>
 <% end %>
 <br>

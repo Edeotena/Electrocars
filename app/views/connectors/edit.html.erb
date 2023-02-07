@@ -1,0 +1,6 @@
+<h2>Edit a connector:</h2>
+
+<%= render "form", point: @point, station: @station, connector: @connector %>
+
+<br>
+<%= link_to 'back', point_station_connector_path(@point, @station, @connector) %>

@@ -1,0 +1,9 @@
+<%= form_with model: [@point, @station] do |form| %>
+  <p>
+    <%= form.label :serial_number %><br>
+    <%= form.text_field :serial_number %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

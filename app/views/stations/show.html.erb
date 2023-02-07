@@ -1,7 +1,7 @@
 <h1><%= "Station##{@station.serial_number}" %></h1>
 
 <%= link_to 'edit', edit_point_station_path %>
-<%= link_to "Destroy", point_station_path(@station.id), data: {
+<%= link_to 'destroy', point_station_path(@point, @station), data: {
   turbo_method: :delete
 } %>
 
@@ -10,8 +10,8 @@
 <h2>Connectors:</h2>
 <% @connectors.reverse_each do |connector| %>
   <li>
-    <%= link_to "Connector ##{connector.type}", point_station_connector_path(@station) %>
+    <%= link_to "Type: #{connector.connector_type}, power: #{connector.power}", point_station_connector_path(@point, @station, connector) %>
   </li>
 <% end %>
 <br>
-<%= link_to "New connector", new_point_station_connector_path(station_id: @station) %>
+<%= link_to "New connector", new_point_station_connector_path(@point, @station) %>

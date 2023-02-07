@@ -1,14 +1,6 @@
 <h2>Add a station:</h2>
 
-<%= form_with model: [@point, @point.station.build] do |form| %>
-  <p>
-    <%= form.label :serial_number %><br>
-    <%= form.text_field :serial_number %>
-  </p>
-  <p>
-    <%= form.submit %>
-  </p>
-<% end %>
+<%= render "form", point: @point, station: @station %>
 
 <br>
 <%= link_to 'back', point_path(@point) %>

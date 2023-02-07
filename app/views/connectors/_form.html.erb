@@ -1,0 +1,13 @@
+<%= form_with model: [@point, @station, @connector] do |form| %>
+  <p>
+    <%= form.label :connector_type %><br>
+    <%= form.text_field :connector_type %>
+  </p>
+  <p>
+    <%= form.label :power %><br>
+    <%= form.text_field :power %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

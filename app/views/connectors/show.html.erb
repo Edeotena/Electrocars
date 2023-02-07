@@ -1,0 +1,11 @@
+<h1><%= 'Connector' %></h1>
+
+<p>type: <%= @connector.connector_type %></p>
+<p>power: <%= @connector.power %></p>
+
+<%= link_to 'edit', edit_point_station_connector_path %>
+<%= link_to 'destroy', point_station_connector_path(@point, @station, @connector), data: {
+  turbo_method: :delete
+} %>
+
+<%= link_to 'back', point_station_path(@point, @station) %>
