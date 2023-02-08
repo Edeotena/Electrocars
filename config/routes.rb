@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'points#index'
+  root 'pages#index'
 
   resources :points do
     resources :stations do

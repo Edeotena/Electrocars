@@ -1,0 +1,13 @@
+<%= link_to 'sessions', sessions_path %>
+<%= link_to 'points', points_path %>
+<h1>Points list:</h1>
+
+<ul>
+  <% @points.each do |point| %>
+    <li>
+      <%= link_to point.name, point %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "New Point", new_point_path %>
