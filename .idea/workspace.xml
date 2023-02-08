@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a0fb5230-750b-4f9b-abd6-7c2b4564ee1c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/points_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/points_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/connectors/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/connectors/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +141,7 @@
       <workItem from="1675771102527" duration="4798000" />
       <workItem from="1675780799982" duration="17676000" />
       <workItem from="1675834108976" duration="870000" />
-      <workItem from="1675835203523" duration="9889000" />
+      <workItem from="1675835203523" duration="13348000" />
     </task>
     <servers />
   </component>
@@ -193,6 +190,6 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/electrocars@electrocars.rcov" NAME="electrocars Coverage Results" MODIFIED="1675845322807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="electrocars" />
+    <SUITE FILE_PATH="coverage/electrocars@electrocars.rcov" NAME="electrocars Coverage Results" MODIFIED="1675848081746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="electrocars" />
   </component>
 </project>

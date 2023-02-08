@@ -22,7 +22,6 @@ class SessionsController < ApplicationController
         format.html { redirect_to point_station_connector_path(@point, @station, @connector) }
         format.json { render :show, status: :created, location: @session }
       else
-        format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @session.errors, status: :unprocessable_entity }
       end
     end
@@ -36,7 +35,6 @@ class SessionsController < ApplicationController
         format.html { redirect_to point_station_connector_path(@point, @station, @connector) }
         format.json { render :show, status: :created, location: @session }
       else
-        format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @session.errors, status: :unprocessable_entity }
       end
     end
