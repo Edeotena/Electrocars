@@ -16,6 +16,6 @@
 <% else %>
   <h2>Active session:</h2>
   <%= "Session id:#{@session.id}, client id:#{@session.client_id}, energy: #{@session.energy}"  %>
-  <%= button_to "Stop active session", session_stop_path(@session) %>
+  <%= button_to "Stop active session", session_stop_path(@session), method: :post %>
 
 <% end %>

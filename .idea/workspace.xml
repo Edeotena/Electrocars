@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a0fb5230-750b-4f9b-abd6-7c2b4564ee1c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/points_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/points_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/client.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/client.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/connector.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/connector.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/connectors/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/connectors/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/points/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/points/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -144,7 +142,9 @@
       <workItem from="1675679904691" duration="14104000" />
       <workItem from="1675712299529" duration="3313000" />
       <workItem from="1675771102527" duration="4798000" />
-      <workItem from="1675780799982" duration="17239000" />
+      <workItem from="1675780799982" duration="17676000" />
+      <workItem from="1675834108976" duration="870000" />
+      <workItem from="1675835203523" duration="9889000" />
     </task>
     <servers />
   </component>
@@ -175,32 +175,24 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/controllers/sessions_controller.rb</url>
-          <line>6</line>
+          <line>17</line>
           <properties myBlockOrdinal="-1">
             <option name="block-ordinal" value="-1" />
           </properties>
-          <option name="timeStamp" value="28" />
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/controllers/sessions_controller.rb</url>
-          <line>18</line>
+          <line>2</line>
           <properties myBlockOrdinal="-1">
             <option name="block-ordinal" value="-1" />
           </properties>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/controllers/sessions_controller.rb</url>
-          <line>10</line>
-          <properties myBlockOrdinal="-1">
-            <option name="block-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="30" />
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/electrocars@electrocars.rcov" NAME="electrocars Coverage Results" MODIFIED="1675798981992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="electrocars" />
+    <SUITE FILE_PATH="coverage/electrocars@electrocars.rcov" NAME="electrocars Coverage Results" MODIFIED="1675845322807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="electrocars" />
   </component>
 </project>

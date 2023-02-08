@@ -1,17 +1,46 @@
 class SessionsController < ApplicationController
   def index
     @sessions = Session.all
+
+    render json: @sessions
   end
+
+  def show
+    @session = Session.find(params[:id])
+    @client = Client.find(@session.client_id)
+    @point = Point.find(Station.find(Connector.find(@session.connector_id).station_id).point_id)
+    render json: { "session": @session,
+      "client": [ @client.phone_number, @client.full_name ],
+      "point": @point.name }.to_json
+  end
+
   def create
-    @session = Session.create session_params
-    set_back_params
-    redirect_to point_station_connector_path(@point, @station, @connector)
+    @session = Session.new session_params
+    respond_to do |format|
+      if @session.save
+        set_back_params
+        format.html { redirect_to point_station_connector_path(@point, @station, @connector) }
+        format.json { render :show, status: :created, location: @session }
+      else
+        format.html { render :new, status: :unprocessable_entity }
+        format.json { render json: @session.errors, status: :unprocessable_entity }
+      end
+    end
   end
   def stop
     @session = Session.find(params[:id])
-    set_back_params
-    Session.update(@session.id, status: 'disable')
-    redirect_to point_station_connector_path(@point, @station, @connector)
+    @session.status = 'disable'
+    respond_to do |format|
+      if @session.save
+        set_back_params
+        format.html { redirect_to point_station_connector_path(@point, @station, @connector) }
+        format.json { render :show, status: :created, location: @session }
+      else
+        format.html { render :new, status: :unprocessable_entity }
+        format.json { render json: @session.errors, status: :unprocessable_entity }
+      end
+    end
+
   end
 
   private

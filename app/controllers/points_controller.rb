@@ -1,6 +1,16 @@
 class PointsController < ApplicationController
   def index
     @points = Point.all
+    stations_json, points_json = {}
+    @points.each do |point|
+      stations = Station.where(point_id: point[:id])
+      stations.each do |station|
+        connectors = Connector.where(station_id: station[:id]).to_json
+        stations_json = station.to_json, connectors
+      end
+      points_json = point.to_json, stations_json
+    end
+    render json: points_json
   end
 
   def show
@@ -17,8 +27,8 @@ class PointsController < ApplicationController
 
     if @point.save
       redirect_to points_path
-      else
-        render :new, status: :unprocessable_entity
+    else
+      render :new, status: :unprocessable_entity
     end
   end
 
